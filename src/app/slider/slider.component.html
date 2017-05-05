@@ -1,0 +1,23 @@
+
+<div class="container">
+<p class="para">
+  Image Slider using Angular 2.
+</p>
+
+<p class="second_para">
+  Click on the arrows to navigate through images.
+</p>
+<div class="arrows">
+  <div class="arrow">
+<fa (click) = "togglePreviousImage()" [name]="'arrow-left'"></fa>
+  </div>
+    <div class="arrow">
+<fa (click) = "toggleNextImage()" [name]="'arrow-right'"></fa>
+    </div>
+</div>
+
+<div #div1 class="image_container" [ngStyle]="{'background-image': 'url(./assets/images/random1.jpg' + ')'}">
+</div>
+
+
+</div>
